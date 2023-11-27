@@ -97,8 +97,8 @@ public class MyLinkedList<T> implements MyDeque<T>, MyList<T> {
      */
     private MyLinkedList<T> arrayToLinkedList(T[] array) {
         MyLinkedList<T> list = new MyLinkedList<>();
-        for (int i = 0; i < array.length; i++) {
-            list.add(array[i]);
+        for (T t : array) {
+            list.add(t);
 
         }
         return list;
