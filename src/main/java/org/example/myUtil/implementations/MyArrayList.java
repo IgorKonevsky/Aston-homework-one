@@ -295,16 +295,6 @@ public class MyArrayList<T> implements MyList<T> {
             currentIndex = 0;
         }
 
-        /**
-         * Checks if the last returned element index is valid.
-         *
-         * @throws IllegalStateException if no elements have been returned yet
-         */
-        private void lastReturnedElementCheck() {
-            if (indexOfLastReturnedElement < 0) {
-                throw new IllegalStateException("No elements have been returned yet");
-            }
-        }
 
         /**
          * Checks whether there is a next element available in the list.
